@@ -7,7 +7,7 @@ from .utils.auth import generate_token, requires_auth, verify_token
 
 @app.route('/', methods=['GET'])
 def index():
-    return render_template('index.html')
+    return render_template('/static/index.html')
 
 
 @app.route('/<path:path>', methods=['GET'])
